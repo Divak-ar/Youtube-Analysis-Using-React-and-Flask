@@ -52,13 +52,28 @@ coverage/
 .env.development.local
 .env.test.local
 .env.production.local
+# Keep example files
+!.env.example
+!**/.env.example
 
 # Build outputs
 build/
 dist/
 
- # Docker
- .dockerignore
- Dockerfile
+**.md
 
-api key yt
+# Docker
+.dockerignore
+Dockerfile
+
+# GitHub workflows and configurations (keep out of repo)
+.github/
+
+# API keys and sensitive data (ensure these are never committed)
+api_key_yt
+*.key
+config/secrets.json
+
+# Additional environment files
+.env.*
+!.env.example
