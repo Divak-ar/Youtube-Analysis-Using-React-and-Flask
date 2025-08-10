@@ -60,8 +60,6 @@ coverage/
 build/
 dist/
 
-**.md
-
 # Docker
 .dockerignore
 Dockerfile
